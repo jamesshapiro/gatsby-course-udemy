@@ -98,3 +98,23 @@ sourceInstanceName filtering
     }
   }
 }
+
+
+gatsby-image query
+
+{
+  fixed:file(relativePath: {eq: "image-3.jpg"}) {
+    childImageSharp {
+      fixed (width: 300, height: 400){
+        src
+      }
+    }
+  }
+  fluid:file(relativePath:{eq: "image-4.jpg"}) {
+    childImageSharp {
+      fluid {
+        src
+      }
+    }
+  }
+}

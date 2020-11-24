@@ -51,7 +51,7 @@ const Images = () => {
           <Image fluid={data.fluid.childImageSharp.fluid} />
           <h2>Content</h2>
         </div>
-        <Image fluid={data.example.childImageSharp.fluid} />
+        {/* <Image fluid={data.example.childImageSharp.fluid} /> */}
       </article>
     </section>
   )

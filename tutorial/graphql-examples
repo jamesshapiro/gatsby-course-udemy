@@ -10,3 +10,55 @@ gatsby-source-filesystem example
     }
   }
 }
+
+limiting response to 3 items
+
+{
+  allFile(limit:3) {
+    totalCount
+    nodes {
+      prettySize
+      birthTime
+      absolutePath
+    }
+  }
+}
+
+Skip 1st item
+
+{
+  allFile(skip:1) {
+    totalCount
+    nodes {
+      prettySize
+      birthTime
+      absolutePath
+    }
+  }
+}
+
+Sort largest to smallest:
+
+{
+  allFile(sort: {fields: size, order: DESC}) {
+    totalCount
+    nodes {
+      prettySize
+      birthTime
+      absolutePath
+    }
+  }
+}
+
+Filter example (notice that Total Count decreases from 7 to 2):
+
+{
+  allFile(filter:{relativeDirectory:{eq:"copy"}}) {
+    totalCount
+    nodes {
+      prettySize
+      birthTime
+      absolutePath
+    }
+  }
+}

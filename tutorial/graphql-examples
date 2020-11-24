@@ -62,3 +62,26 @@ Filter example (notice that Total Count decreases from 7 to 2):
     }
   }
 }
+
+
+Multiple Query Arguments:
+
+query MyQuery {
+  allFile(limit: 4, skip: 2) {
+    nodes {
+      birthTime(fromNow: true)
+      prettySize
+      absolutePath
+    }
+  }
+}
+
+
+File field:
+
+{
+  file(relativePath:{eq:"copy/image-2.jpg"}) {
+    prettySize
+    relativePath
+  }
+}

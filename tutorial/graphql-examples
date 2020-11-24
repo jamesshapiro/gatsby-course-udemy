@@ -85,3 +85,16 @@ File field:
     relativePath
   }
 }
+
+
+sourceInstanceName filtering
+
+{
+  allFile(filter: {sourceInstanceName: {eq: "posts"}}) {
+    totalCount
+    nodes {
+      absolutePath
+      size
+    }
+  }
+}

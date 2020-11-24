@@ -27,7 +27,6 @@ const Header = () => {
       },
     },
   } = useStaticQuery(getData)
-  // console.log(data)
 
   return (
     <div>

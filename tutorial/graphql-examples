@@ -1,0 +1,12 @@
+gatsby-source-filesystem example
+
+{
+  allFile {
+    totalCount
+    nodes {
+      prettySize
+      birthTime
+      absolutePath
+    }
+  }
+}

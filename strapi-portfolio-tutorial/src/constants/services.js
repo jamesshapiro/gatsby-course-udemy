@@ -5,18 +5,18 @@ export default [
     id: 1,
     icon: <FaCode className="service-icon" />,
     title: "web development",
-    text: `I'm baby meditation tofu chillwave, distillery messenger bag thundercats chicharrones kale chips gochujang. Banh mi direct trade marfa salvia.`,
+    text: `HODOR HODOR! Hodor, hodor. Hodor. Hodor. Hodor, hodor. Hodor. Hodor. HODOR? Hodor, hodor. Hodor. Hodor? Hodor... Hodor hodor. HODOR HODOR! HODOR hodor, hodor.`,
   },
   {
     id: 2,
     icon: <FaSketch className="service-icon" />,
     title: "web design",
-    text: `I'm baby meditation tofu chillwave, distillery messenger bag thundercats chicharrones kale chips gochujang. Banh mi direct trade marfa salvia.`,
+    text: `HODOR HODOR! Hodor, hodor. Hodor. Hodor. Hodor, hodor. Hodor. Hodor. HODOR? Hodor, hodor. Hodor. Hodor? Hodor... Hodor hodor. HODOR HODOR! HODOR hodor, hodor.`,
   },
   {
     id: 3,
     icon: <FaAndroid className="service-icon" />,
     title: "app design",
-    text: `I'm baby meditation tofu chillwave, distillery messenger bag thundercats chicharrones kale chips gochujang. Banh mi direct trade marfa salvia.`,
+    text: `HODOR HODOR! Hodor, hodor. Hodor. Hodor. Hodor, hodor. Hodor. Hodor. HODOR? Hodor, hodor. Hodor. Hodor? Hodor... Hodor hodor. HODOR HODOR! HODOR hodor, hodor.`,
   },
 ]

@@ -33,7 +33,6 @@ const Jobs = () => {
   const {
     node: { company, position, date, desc },
   } = jobs[value]
-  console.log(company, position, date, desc)
 
   return (
     <section className="section jobs">

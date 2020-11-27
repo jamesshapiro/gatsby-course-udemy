@@ -20,7 +20,7 @@ export default ({ data }) => {
       <Services />
       <Jobs />
       <Projects projects={projects} title="featured projects" showLink />
-      <Blogs blogs={blogs} title="blog" showLink />
+      <Blogs blogs={blogs} title="latest articles" showLink />
     </Layout>
   )
 }
@@ -53,7 +53,6 @@ export const query = graphql`
         date(formatString: "MMMM Do, YYYY")
         description
         category
-        content
         id
         slug
         strapiId

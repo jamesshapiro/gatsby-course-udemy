@@ -9,7 +9,7 @@ const query = graphql`
     file(relativePath: { eq: "square-crop-0-compress.png" }) {
       childImageSharp {
         fluid {
-          ...GatsbyImageSharpFluid
+          ...GatsbyImageSharpFluid_tracedSVG
         }
       }
     }

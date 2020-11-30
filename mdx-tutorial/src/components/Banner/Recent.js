@@ -39,7 +39,6 @@ const Recent = () => {
     <Wrapper>
       <Title title="recent" />
       {posts.map(post => {
-        // console.log(post.frontmatter)
         const {
           title,
           slug,
@@ -48,7 +47,6 @@ const Recent = () => {
             childImageSharp: { fluid },
           },
         } = post.frontmatter
-        console.log(title)
         return (
           <Link to={`/posts/${slug}`} key={post.id} className="post">
             <Image fluid={fluid} className="img" />

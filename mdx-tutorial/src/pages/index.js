@@ -10,7 +10,6 @@ const IndexPage = ({ data }) => {
     allMdx: { nodes: posts },
   } = data
 
-  console.log(data)
   return (
     <Layout>
       <Hero showPerson />

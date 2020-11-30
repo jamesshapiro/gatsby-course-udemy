@@ -1,5 +1,6 @@
 import { Link } from 'gatsby'
 import { FiInfo } from 'react-icons/fi'
+import { Counter, LikeButton } from '../components/Complete'
 
 <section className='mdx-page'>
 
@@ -22,19 +23,49 @@ const lastName = 'smith'
 
 <div className='nice-text'>
 
-<h3>
-  Hodor, hodor. Hodor. Hodor. Hodor hodor. Hodor, hodor. Hodor. Hodor. Hodor!
-  Hodor hodor. Hodor! Hodor hodor. Hodor hodor! Hodor hodor HODOR! Hodor. Hodor
-  hodor HODOR! Hodor. Hodor? Hodor hodor. Hodor... Hodor hodor. Hodor, hodor.
-  Hodor. Hodor hodor HODOR! Hodor. HODOR hodor, hodor. Hodor hodor. Hodor,
-  hodor. Hodor. Hodor. Hodor! Hodor hodor. Hodor hodor! Hodor! Hodor hodor.
-  Hodor! Hodor hodor. Hodor, hodor, hodor hodor. Hodor hodor. HODOR hodor,
-  hodor. Hodor, hodor. Hodor. Hodor. Hodor hodor. HODOR hodor, hodor. Hodor
-  hodor HODOR! Hodor. HODOR hodor, hodor. Hodor hodor HODOR! Hodor.
-</h3>
+<h3>nice text</h3>
 
 <FiInfo className="nice-text-icon"></FiInfo>
 
+**Hodor, hodor. Hodor. Hodor. Hodor hodor. Hodor, hodor. Hodor. Hodor. Hodor!
+Hodor hodor. Hodor! Hodor hodor. Hodor hodor!** Hodor hodor HODOR! Hodor. Hodor
+hodor HODOR! Hodor. Hodor? Hodor hodor. Hodor... Hodor hodor. Hodor, hodor.
+Hodor. Hodor hodor HODOR! Hodor. HODOR hodor, hodor. Hodor hodor. Hodor,
+hodor. Hodor. Hodor. Hodor! Hodor hodor. Hodor hodor! Hodor! Hodor hodor.
+Hodor! Hodor hodor. Hodor, hodor, hodor hodor. Hodor hodor. HODOR hodor,
+hodor. Hodor, hodor. Hodor. Hodor. Hodor hodor. HODOR hodor, hodor. Hodor
+hodor HODOR! Hodor. HODOR hodor, hodor. _Hodor hodor HODOR! Hodor._
+
 </div>
+
+<h2>React Components</h2>
+
+<Counter />
+
+```jsx
+import React from 'react'
+import styled from 'styled-components'
+import { AiOutlineLike } from 'react-icons/ai'
+const LikeButton = () => {
+  const [value, setValue] = React.useState(0)
+  return (
+    <Wrapper>
+      <div>
+        <button onClick={() => setValue(value + 1)}>
+          <AiOutlineLike />
+        </button>
+        <p>
+          Liked the post?
+          <br />
+          Click thumbs up few times
+        </p>
+      </div>
+      <span>+{value}</span>
+    </Wrapper>
+  )
+}
+```
+
+<LikeButton />
 
 </section>

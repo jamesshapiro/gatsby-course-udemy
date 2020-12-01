@@ -4,6 +4,7 @@ import About from './About'
 import Instagram from './Instagram'
 import Recent from './Recent'
 import BannerCategories from './BannerCategories'
+
 const Banner = () => {
   return (
     <Wrapper>

@@ -4,6 +4,7 @@ import { Headings } from './src/components/Complete/'
 
 const components = {
   h2: Headings.myH2,
+  h4: Headings.myH4,
 }
 
 export const wrapMDX = ({ element }) => {
